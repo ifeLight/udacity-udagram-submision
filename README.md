@@ -27,10 +27,10 @@ To create the infrastructure, run the following command:
 ``` bash
 # Create the infrastructure
 # Clone the repo
-git clone https://github.com/ifeLight/udacity-aws-devops.git project-app
+git clone https://github.com/ifeLight/udacity-udagram-submision.git project-app
 
 # Change directory
-cd project-app/workbook/project-submission
+cd project-app
 
 # Make the script executable
 sudo chmod +x create-servers.sh
@@ -57,4 +57,10 @@ sudo chmod +x delete-servers.sh
 
 # Run the script, replace {stack-name} with your own stack name
 ./delete.sh {stack-name}
+```
+
+#### A sample link
+
+``` bash
+http://udagram-webapploadbalancer-1012298569.us-west-2.elb.amazonaws.com/
 ```
