@@ -10,6 +10,10 @@ Students may use a JSON file for increasing the generic nature of the YAML code.
 
 In YAML code, the `${EnvironmentName}` would be substituted with `UdacityProject` accordingly.
 
+### Diagram
+
+![The Udagram Architecture Diagram](udagram-architecture.jpeg "Udagram architecture")
+
 ### Usage
 
 Make sure you have the following installed:
