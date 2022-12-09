@@ -276,14 +276,6 @@ Resources:
         - Key: Name
           Value: !Sub "${EnvironmentName}-LoadBalancerSecurityGroup"
 
-  # ----------------------- The Key Pair -------------------------------------------------------
-  # A Key Pair for SSH access to the instances
-  InstanceKeyPair:
-    Type: AWS::EC2::KeyPair
-    Description: Name of an existing EC2 KeyPair to enable SSH access to the instances
-    Properties:
-      KeyName: !Sub ${EnvironmentName}-KeyPair
-
   # ----------------------- The Launch Configuration --------------------------------------------
   # A Launch Configuration for the Web Servers
   WebAppLaunchConfig:
@@ -298,7 +290,6 @@ Resources:
           cd /var/www/html
           echo "Udacity Demo Web Server Up and Running!" > index.html
       ImageId: ami-0e8ad072b97e68af9 # Ubuntu 18.04 LTS
-      KeyName: !Ref InstanceKeyPair
       SecurityGroups:
         - Ref: WebServerSecGroup
       InstanceType: t3.medium

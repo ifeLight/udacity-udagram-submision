@@ -66,5 +66,5 @@ sudo chmod +x delete-servers.sh
 #### A sample link
 
 ``` bash
-http://udagram-webapploadbalancer-1012298569.us-west-2.elb.amazonaws.com/
+http://udagram-webapploadbalancer-1743127452.us-west-2.elb.amazonaws.com/
 ```
